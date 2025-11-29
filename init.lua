@@ -7,6 +7,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 ------------------------------------------------
 -- 🟥 C / C++
 ------------------------------------------------
+
 vim.lsp.config("clangd", {
   cmd = { "/usr/bin/clangd" },
   filetypes = { "cpp", "c" },

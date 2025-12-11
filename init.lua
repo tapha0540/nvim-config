@@ -8,12 +8,12 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 -- 🟥 C / C++
 ------------------------------------------------
 
---vim.lsp.config("clangd", {
---  cmd = { "/usr/bin/clangd" },
---  filetypes = { "cpp", "c" },
---  capabilities = capabilities,
---})
---vim.lsp.enable("clangd")
+vim.lsp.config("clangd", {
+  cmd = { "clangd" },
+  filetypes = { "cpp", "c" },
+  capabilities = capabilities,
+})
+vim.lsp.enable("clangd")
 
 -- CSS LSP
 --vim.lsp.config("cssls", {
